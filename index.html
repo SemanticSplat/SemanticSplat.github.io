@@ -309,13 +309,22 @@ features(3.5), we reconstruct the holistic semantic feature field by jointly enf
         </div>
     </section>
 
+    <hr>
+
     <br><br><br>
      <script>
         $(window).on('load', function () {
             bulmaCarousel.attach('#comparison-carousel-horizontal', {
-                slidesToScroll: 2,
-                slidesToShow: 2,
+                slidesToScroll: 3,
+                slidesToShow: 3,
                 loop: true,
+                autoplay: false,
+            });
+
+            bulmaCarousel.attach('#comparison-carousel-horizontal-feature', {
+                slidesToScroll: 4,
+                slidesToShow: 4,
+                // loop: true,
                 autoplay: false,
             });
 
@@ -330,12 +339,12 @@ features(3.5), we reconstruct the holistic semantic feature field by jointly enf
         });
     </script> 
 
-    <section class="hero teaser is-small">
+    <section class="hero teaser is-light is-small">
             <div class="hero-body">
 
                 <div class="container" style="text-align: center; ">
                     <h2 class="title is-3">Language Feature Field</h2>
-                    <div id="comparison-carousel-horizontal" class="carousel results-carousel">
+                    <div id="comparison-carousel-horizontal-feature" class="carousel results-carousel">
                         <div class="cmpcontent">
                             <video muted autoplay="autoplay" loop="loop" width="100%">
                                 <source src="./static/videos/scene0691/pcas.mp4" type="video/mp4">
@@ -378,6 +387,9 @@ features(3.5), we reconstruct the holistic semantic feature field by jointly enf
                                 <source src="./static/videos/scene0691/hots.mp4" type="video/mp4">
                             </video>
                         </div>
+                        <h2 class="subtitle has-text-centered">
+                          Query: "Chair"
+                        </h2>
                     </div>
                     <div class="twentytwenty-container twentytwenty-container-bottom">
                         <div class="cmpcontent">
@@ -390,6 +402,9 @@ features(3.5), we reconstruct the holistic semantic feature field by jointly enf
                                 <source src="./static/videos/scene0702/hots.mp4" type="video/mp4">
                             </video>
                         </div>
+                        <h2 class="subtitle has-text-centered">
+                          Query: "Toilet"
+                        </h2>
                     </div>
                     <div class="twentytwenty-container twentytwenty-container-bottom">
                         <div class="cmpcontent">
@@ -402,6 +417,9 @@ features(3.5), we reconstruct the holistic semantic feature field by jointly enf
                                 <source src="./static/videos/scene0705/hots.mp4" type="video/mp4">
                             </video>
                         </div>
+                        <h2 class="subtitle has-text-centered">
+                          Query: "Table"
+                        </h2>
                     </div>
                     <div class="twentytwenty-container twentytwenty-container-bottom">
                         <div class="cmpcontent">
@@ -414,6 +432,9 @@ features(3.5), we reconstruct the holistic semantic feature field by jointly enf
                                 <source src="./static/videos/scene0706/hots.mp4" type="video/mp4">
                             </video>
                         </div>
+                        <h2 class="subtitle has-text-centered">
+                          Query: "Bed"
+                        </h2>
                     </div>
                     <div class="twentytwenty-container twentytwenty-container-bottom">
                         <div class="cmpcontent">
@@ -426,11 +447,77 @@ features(3.5), we reconstruct the holistic semantic feature field by jointly enf
                                 <source src="./static/videos/scene0703/hots.mp4" type="video/mp4">
                             </video>
                         </div>
+                        <h2 class="subtitle has-text-centered">
+                          Query: "Table"
+                        </h2>
                     </div>
                 </div>
             </div>
         </div>
     </section>
+
+    <section class="hero teaser is-light is-small">
+            <div class="hero-body">
+
+                <div class="container" style="text-align: center; ">
+                    <h2 class="title is-3">segmentation Feature Field</h2>
+                    <div id="comparison-carousel-horizontal-feature" class="carousel results-carousel">
+                        <div class="cmpcontent">
+                            <video muted autoplay="autoplay" loop="loop" width="100%">
+                                <source src="./static/videos/scene0691/seg_pcas.mp4" type="video/mp4">
+                            </video>
+                        </div>
+                        <div class="cmpcontent">
+                            <video muted autoplay="autoplay" loop="loop" width="100%">
+                                <source src="./static/videos/scene0700/seg_pcas.mp4" type="video/mp4">
+                            </video>
+                        </div>
+                        <div class="cmpcontent">
+                            <video muted autoplay="autoplay" loop="loop" width="100%">
+                                <source src="./static/videos/scene0705/seg_pcas.mp4" type="video/mp4">
+                            </video>
+                        </div>
+                        <div class="cmpcontent">
+                            <video muted autoplay="autoplay" loop="loop" width="100%">
+                                <source src="./static/videos/scene0706/seg_pcas.mp4" type="video/mp4">
+                            </video>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </section>
+
+    <section class="hero teaser is-light is-small">
+            <div class="hero-body">
+
+                <div class="container" style="text-align: center; ">
+                    <h2 class="title is-3">Promptable Segmentation</h2>
+                    <div id="comparison-carousel-horizontal-feature" class="carousel results-carousel">
+                        <div class="cmpcontent">
+                            <video muted autoplay="autoplay" loop="loop" width="100%">
+                                <source src="./static/videos/scene0691/masks.mp4" type="video/mp4">
+                            </video>
+                        </div>
+                        <div class="cmpcontent">
+                            <video muted autoplay="autoplay" loop="loop" width="100%">
+                                <source src="./static/videos/scene0700/masks.mp4" type="video/mp4">
+                            </video>
+                        </div>
+                        <div class="cmpcontent">
+                            <video muted autoplay="autoplay" loop="loop" width="100%">
+                                <source src="./static/videos/scene0705/masks.mp4" type="video/mp4">
+                            </video>
+                        </div>
+                        <div class="cmpcontent">
+                            <video muted autoplay="autoplay" loop="loop" width="100%">
+                                <source src="./static/videos/scene0706/masks.mp4" type="video/mp4">
+                            </video>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </section>
+
 
   <!-- <br><br><br>
   <script>
